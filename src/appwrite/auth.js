@@ -1,10 +1,9 @@
-import { use } from "react";
 import conf from "../conf/conf.js";
 import { Client,Account,ID } from "appwrite";
 
 export class AuthService{
-    client = new Client
-    account 
+    client = new Client()
+    account;
     
     constructor(){
         this.client
@@ -45,16 +44,16 @@ export class AuthService{
         } catch (error) {
             console.log("Appwrite Service :: getCurrentUser :: error ",error)
         }
-        return null
+        return null;
     }
 
     async logout(){
         try {
-            return await this.account.deleteSessions()
+            await this.account.deleteSessions()
         } catch (error) {
             console.log("Appwrite Service :: getCurrentUser :: error ",error)
         }
-        return null
+        
     }
 
 
@@ -62,6 +61,6 @@ export class AuthService{
 
 
 
-const authservice = new AuthService
+const authservice = new AuthService()
 
 export default authservice
