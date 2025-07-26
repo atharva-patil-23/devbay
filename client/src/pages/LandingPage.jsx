@@ -74,6 +74,20 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
+
+      <section className="px-4 md:px-6 py-16 md:py-20 bg-gray-100">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-secondary-foreground mb-4">
+            Ready to start sharing your knowledge?
+          </h2>
+          <p className="text-base md:text-lg text-secondary-foreground/80 mb-6 md:mb-8">
+            Join the community of developers building their brand through content
+          </p>
+          <button className="bg-teal-500 hover:bg-teal-300/90 text-white rounded-full px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold">
+            Get started free
+          </button>
+        </div>
+      </section>
     </div>
   )
 }
