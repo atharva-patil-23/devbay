@@ -18,7 +18,7 @@ A modern blogging platform designed specifically for developers to share knowled
 ### Frontend
 
 - **React.js** - User interface library
-- **CSS3** - Styling and responsive design
+- **TailwindCSS** - Styling and responsive design
 - **Axios** - HTTP client for API requests
 
 ### Backend
