@@ -88,6 +88,20 @@ const LandingPage = () => {
           </button>
         </div>
       </section>
+
+      {/* Footer */}
+      <div className="mt-2  border-t border-gray-300 text-center text-gray-100"></div>
+      <footer className="px-4 md:px-6 py-8 md:py-12 bg-gray-100">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center justify-center space-x-2 mb-4 md:mb-6">
+            <img src="/devbay-logo.png" className="h-5 w-5 md:h-6 md:w-6 text-primary" alt="" />
+            <span className="text-lg md:text-xl font-bold text-background">DevBay</span>
+          </div>
+          <div className="flex flex-wrap justify-center gap-4 md:space-x-8 md:gap-0 text-background/70 text-sm">
+          © 2025 DevBay. All rights reserved. Created By Atharva Patil
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
