@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "mongoose": "^8.16.5"
+  },
+  "name": "devbay",
+  "version": "1.0.0",
+  "description": "A modern blogging platform designed specifically for developers to share knowledge, tutorials, and insights with the tech community.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atharva-patil-23/devbay.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atharva-patil-23/devbay/issues"
+  },
+  "homepage": "https://github.com/atharva-patil-23/devbay#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
