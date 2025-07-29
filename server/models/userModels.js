@@ -20,6 +20,10 @@ const userSchema = mongoose.Schema({
     },
     bio:{
         type:String,
+    },
+    profilePicture:{
+        type:String,
+        trim:true
     }
 
 },{timestamps:true})
