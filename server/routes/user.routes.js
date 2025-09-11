@@ -9,10 +9,9 @@ userRouter.post("/signup",async(req,res) => {
 
     try {
         const {username , email , password} = req.body
+        const hashedPassword = await bcryptjs.hash(password,12)
 
-        const hashedPassword = bcryptjs.hash(password,12)
-
-        const existingUser = await adminModel.findOne({email})
+        const existingUser = await User.findOne({email})
 
         if(existingUser){
             res.json({
@@ -64,13 +63,16 @@ userRouter.post("/login",async(req,res) => {
 
         res.json({
             token:token,
-            message:"Sigin IN successful!"
+            message:"Login successful!"
         })
 
 
     } catch (error) {
         res.status(403).json({
-            message:"error while signing in!"
+            message:"error while logging in!"
         })
     }
 })
+
+
+export default userRouter
